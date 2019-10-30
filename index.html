@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Default</title>
+    <title>Daily form</title>
 </head>
-<body class="flex">
-    <div class="container">
-        <form class="form" action="#" method="GET">
+<body>
+    <article class="flex container forms">
+        <form class="form" action="#" method="GET" name="daily-form">
             <h1 class="form__name">Create your free account</h1>
-            <div class="form__title">Come and join our cool and amazing community, fill in your details to get started. Already have an account? <a href="#">Log in</a>.</div>
+            <div class="form__title">Come and join our cool and amazing community, fill in your details to get started. Already have an account? <a class="form__link" href="#">Log in</a>.</div>
             <div class="flex flex--sb">
                 <input class="form__input" type="text" name="firstname" placeholder="First name">
                 <input class="form__input" type="text" name="lastname" placeholder="Last name">
@@ -21,8 +21,48 @@
             <input class="form__input" type="email" name="email" placeholder="Email address">
             <input class="form__input" type="password" name="password" placeholder="Password">
             <button class="btn">Sign up for free</button>
-            <div calss="form__subtitle">By clicking on “Sign up for free”, you agree to the <a href="#">Terms of Service</a> and the <a href="#">Privacy Policy</a></div>
+            <div calss="form__subtitle">By clicking on “Sign up for free”, you agree to the <a class="form__link" href="#">Terms of Service</a> and the <a class="form__link" href="#">Privacy Policy</a></div>
         </form>
-    </div>
+    </article>
+    
+    
+    
+    <article class="flex container forms--bg-white">
+        <form class="form--sign" action="#" method="GET" name="sign-in-form">
+            <div class="form__head">
+                <a href="#" class="form__link--sign form__link-active--sign">Sign in</a>
+                <a href="#" class="form__link--sign">Join us</a>
+            </div>
+            <div class="form__main">
+                <label class="form__label" for="username">Username</label>
+                <input class="form__username" type="text" name="username" id="username" required>
+                <label class="form__label" for="password">Password</label>
+                <input class="form__password" type="password" name="password" id="password">
+                <label class="form__label form__label--checkbox"><input class="form__checkox" type="checkbox" name="keep-me" checked>Keep me signed in</label>
+            </div>
+            <button class="btn btn--sign">Sign in</button>
+            <div class="form__footer flex flex--sb">
+                <a class="form__link--sign form__link--sign-footer" href="#">Fogot password</a>
+                <a class="form__link--sign form__link--sign-footer" href="#">Create an acount</a>
+            </div>
+        </form>
+    </article>
+    
+    
+
+    <article class="flex container forms--bg-blue">
+        <form class="form form--mail" action="#" method="GET" name="daily-form">
+            <div class="form__exit"></div>
+            <div class="form__logo"><img class="form__img" src="img/email.png" alt="logo"></div>
+            <div class="form__heading">Newsletter</div>
+            <div class="form__subtitle form__subtitle--mail">Stay up to date with our latest news and products.</div>
+            <div class="flex flex--sb">
+                <input class="form__mail" type="email" name="email" id="email" placeholder="Your email address">
+                <button class="btn btn--mail" type="submit">Subscribe</button>
+            </div>
+            <div class="form__about">Your email is safe with us, we don’t spam.</div>
+        </form>
+    </article>
+
 </body>
 </html>
